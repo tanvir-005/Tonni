@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="color-scheme" content="dark light" />
+        <title>Birthday</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <div class="bg" aria-hidden="true">
+        <div class="bg-grid"></div>
+        <div class="bg-scanlines"></div>
+        <div class="bg-orb orb--a"></div>
+        <div class="bg-orb orb--b"></div>
+        <div class="bg-orb orb--c"></div>
+        </div>
+
+        <main class="stage">
+        <section id="countdownView" class="view" aria-live="polite">
+            <div class="brand">
+            <!-- <div class="chip-heart" aria-hidden="true">
+                <svg viewBox="0 0 64 64" role="img" focusable="false">
+                <defs>
+                    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#ff4fd8" />
+                    <stop offset="1" stop-color="#2ee9ff" />
+                    </linearGradient>
+                </defs>
+                <rect x="10" y="10" width="44" height="44" rx="10" fill="rgba(255,255,255,0.06)" stroke="url(#g1)" stroke-width="2" />
+                <path
+                    d="M32 46s-14-7.6-14-18.2C18 21 22 18 26 18c2.5 0 5 1.4 6 3.3C33 19.4 35.5 18 38 18c4 0 8 3 8 9.8C46 38.4 32 46 32 46z"
+                    fill="url(#g1)"
+                    opacity="0.95"
+                />
+                <circle cx="22" cy="24" r="2" fill="#2ee9ff" opacity="0.85" />
+                <circle cx="42" cy="24" r="2" fill="#ff4fd8" opacity="0.85" />
+                <path d="M18 34h12M34 34h12" stroke="url(#g1)" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+                </svg>
+            </div> -->
+            <div class="brand-text">
+                <span class="mono">Wait till 12:00 am</span>
+                <span class="slash">/</span>
+                <span class="mono">Come back later</span>
+            </div>
+            </div>
+
+            <h1 class="countdown-title">Preparing a wish for you</h1>
+
+            <div class="countdown-grid" role="group" aria-label="Countdown timer">
+            <div class="time-block">
+                <div class="time-value" id="daysVal">00</div>
+                <div class="time-label">Days</div>
+            </div>
+            <div class="time-block">
+                <div class="time-value" id="hoursVal">00</div>
+                <div class="time-label">Hours</div>
+            </div>
+            <div class="time-block">
+                <div class="time-value" id="minsVal">00</div>
+                <div class="time-label">Minutes</div>
+            </div>
+            <div class="time-block">
+                <div class="time-value" id="secsVal">00</div>
+                <div class="time-label">Seconds</div>
+            </div>
+            </div>
+
+            <p class="countdown-sub">
+            Waiting until <span class="mono">26 Mar 2026</span>, <span class="mono">12:00 AM</span>
+            </p>
+        </section>
+
+        <section id="contentView" class="view content" aria-hidden="true">
+            <header class="hero">
+            <div class="hero-badge">
+                <span class="dot" aria-hidden="true"></span>
+                To: Taznun Akter Tonni
+            </div>
+
+            <h1 class="hero-title">
+                Happy Birthday, <span id="girlfriendNameEl">My Semicolon</span>
+                <!-- <span aria-hidden="true">❤️</span> -->
+            </h1>
+            <p class="hero-text" id="supportingTextEl">
+                I wish you intelligence, prosperity and happiness. May Allah grant all of your wishes. Be lively, now and always.
+            </p>
+            </header>
+
+            <section class="section moments">
+            <div class="section-head">
+                <h2>Our Journey</h2>
+                <p class="section-sub">A few frames of our journey together</p>
+            </div>
+
+            
+
+            <div class="cards">
+                <article class="card moment-card">
+                    <img
+                        class="card-img"
+                        src="img/0.jpeg"
+                        alt="A special moment together"
+                        loading="lazy"
+                    />
+                    <div class="card-body">
+                        <h3 class="card-title">Your Orientation</h3>
+                        <p class="card-text">
+                        You took pictures with me on your orientation program. I was too shy to stand with you back then. But we look like a couple here.
+                        </p>
+                        <div class="chip">Your Day</div>
+                    </div>
+                </article>
+
+                <article class="card moment-card">
+                <img
+                    class="card-img"
+                    src="img/1.jpeg"
+                    alt="Our First Date"
+                    loading="lazy"
+                />
+                <div class="card-body">
+                    <h3 class="card-title">Our First Date</h3>
+                    <p class="card-text">
+                    November 24, 2025 - a memorable day. We suddenly planned a date, ate together and went for kayaking in Diabari.
+                    </p>
+                    <div class="chip">Initiation</div>
+                </div>
+                </article>
+
+                <article class="card moment-card">
+                <img
+                    class="card-img"
+                    src="img/2.jpeg"
+                    alt="A playful moment together"
+                    loading="lazy"
+                />
+                <div class="card-body">
+                    <h3 class="card-title">BUBT Collaborative</h3>
+                    <p class="card-text">
+                    You participated the BUBT Collaborative and I went with you sitting next to you. A wonderful day with you.
+                    </p>
+                    <div class="chip">Contest</div>
+                </div>
+                </article>
+
+                <article class="card moment-card">
+                <img
+                    class="card-img"
+                    src="img/3.jpeg"
+                    alt="A special moment together"
+                    loading="lazy"
+                />
+                <div class="card-body">
+                    <h3 class="card-title">Flowers</h3>
+                    <p class="card-text">
+                    I made an official propose and bought you flowers, you accepted the flowers and kept them in your profile picture.
+                    </p>
+                    <div class="chip">dp</div>
+                </div>
+                </article>
+
+                <article class="card moment-card">
+                <img
+                    class="card-img"
+                    src="img/4.jpeg"
+                    alt="A special moment together"
+                    loading="lazy"
+                />
+                <div class="card-body">
+                    <h3 class="card-title">Saree</h3>
+                    <p class="card-text">
+                    You look magnificent on Saree; too much cuteness.
+                    </p>
+                    <div class="chip">Cuteness</div>
+                </div>
+                </article>
+
+                <article class="card moment-card">
+                <img
+                    class="card-img"
+                    src="img/5.jpeg"
+                    alt="A special moment together"
+                    loading="lazy"
+                />
+                <div class="card-body">
+                    <h3 class="card-title">Fantasy Kingdom Tour</h3>
+                    <p class="card-text">
+                    We went to Fantasy Kingdom with Fahad and Surma and then came back late to Uttara. We shared meal and captured many many photos.
+                    </p>
+                    <div class="chip">Tour</div>
+                </div>
+                </article>
+
+                <article class="card moment-card">
+                <img
+                    class="card-img"
+                    src="img/6.jpeg"
+                    alt="A special moment together"
+                    loading="lazy"
+                />
+                <div class="card-body">
+                    <h3 class="card-title">Again Saree</h3>
+                    <p class="card-text">
+                    I bought you a saree. This is the first time I've bought a saree. Thank you for loving it.
+                    </p>
+                    <div class="chip">Tangail Saree</div>
+                </div>
+                </article>
+
+                <article class="card moment-card">
+                <img
+                    class="card-img"
+                    src="img/7.jpeg"
+                    alt="A special moment together"
+                    loading="lazy"
+                />
+                <div class="card-body">
+                    <h3 class="card-title">My Last Academic Day</h3>
+                    <p class="card-text">
+                    We did our last class. You joined me in the class. You were with me till the last of the day.
+                    </p>
+                    <div class="chip">My Last Day</div>
+                </div>
+                </article>
+
+                <article class="card moment-card">
+                <img
+                    class="card-img"
+                    src="img/8.jpeg"
+                    alt="A special moment together"
+                    loading="lazy"
+                />
+                <div class="card-body">
+                    <h3 class="card-title">Your Contest</h3>
+                    <p class="card-text">
+                    One of the most cute things I find in you is your coding. You look so cute when you code or discuss programming.
+                    </p>
+                    <div class="chip">Code</div>
+                </div>
+                </article>
+
+                <article class="card moment-card">
+                <img
+                    class="card-img"
+                    src="img/9.jpeg"
+                    alt="A special moment together"
+                    loading="lazy"
+                />
+                <div class="card-body">
+                    <h3 class="card-title">We at CSE Iftar</h3>
+                    <p class="card-text">
+                    We participated the Iftar Mahfil arranged by our department. You were looking so cute. First time I am in a Panjabi with you.
+                    </p>
+                    <div class="chip">CSE Iftar</div>
+                </div>
+                </article>
+
+                <article class="card moment-card">
+                <img
+                    class="card-img"
+                    src="img/10.jpeg"
+                    alt="A special moment together"
+                    loading="lazy"
+                />
+                <div class="card-body">
+                    <h3 class="card-title">We at campus</h3>
+                    <p class="card-text">
+                    I wore formal. Ipshita captured this beautiful picture of us.
+                    </p>
+                    <div class="chip">Formal</div>
+                </div>
+                </article>
+
+                <article class="card moment-card">
+                <img
+                    class="card-img"
+                    src="img/11.jpeg"
+                    alt="A special moment together"
+                    loading="lazy"
+                />
+                <div class="card-body">
+                    <h3 class="card-title">Eid Day 2026</h3>
+                    <p class="card-text">
+                    Our Eid Twining - we made dresses of same color to match with each other. Thanks to you because for your efforts for matching the color.
+                    </p>
+                    <div class="chip">Twining</div>
+                </div>
+                </article>
+            </div>
+
+            
+            
+
+            <!-- <p class="hint">
+                Tip: replace the images with your own photos (or update the src URLs in index.html) to make it truly yours.
+            </p> -->
+            </section>
+
+            <section class="section journey">
+            <div class="section-head">
+                <h2>With You, I find</h2>
+                <p class="section-sub">From nowhere to eternity</p>
+            </div>
+
+            <!-- <div class="grid-2">
+                <div class="panel">
+                <h3 class="panel-title">Where it started</h3>
+                <p class="panel-text">
+                    It began with small moments and simple words. But somehow, they turned into a bond so strong
+                    it feels like fate wrote our code.
+                </p>
+                <div class="divider"></div>
+                <p class="panel-text">
+                    I don’t just like you. I admire you. I learn from you. I feel safe with you.
+                </p>
+                </div>
+
+                <div class="panel">
+                <h3 class="panel-title">Where we’re going</h3>
+                <p class="panel-text">
+                    More late-night talks, more trips, more “I can’t believe we did that” stories. More days where
+                    your smile is the best signal.
+                </p>
+                <div class="divider"></div>
+                <p class="panel-text">
+                    We’ll keep upgrading our love: better communication, bigger dreams, and calmer storms.
+                </p>
+                </div>
+            </div> -->
+
+            <div class="timeline" aria-label="Milestones timeline">
+                <!-- <div class="timeline-item">
+                <div class="timeline-kicker">Milestone 01</div>
+                <div class="timeline-title">Comfort</div>
+                <div class="timeline-text">The day you felt like home.</div>
+                </div>
+                <div class="timeline-item">
+                <div class="timeline-kicker">Milestone 02</div>
+                <div class="timeline-title">Teamwork</div>
+                <div class="timeline-text">Us handling everything—together.</div>
+                </div>
+                <div class="timeline-item">
+                <div class="timeline-kicker">Milestone 03</div>
+                <div class="timeline-title">Growth</div>
+                <div class="timeline-text">Love that keeps getting stronger.</div>
+                </div> -->
+
+                <div class="timeline-item">
+                <div class="timeline-title">Happiness</div>
+                <div class="timeline-text">You make me happy</div>
+                </div>
+                
+                <div class="timeline-item">
+                <div class="timeline-title">Beauty</div>
+                <div class="timeline-text">You are beautiful</div>
+                </div>
+
+                <div class="timeline-item">
+                <div class="timeline-title">Cuteness</div>
+                <div class="timeline-text">You are too much cute</div>
+                </div>
+
+                <div class="timeline-item">
+                <div class="timeline-title">Support</div>
+                <div class="timeline-text">You are always supportive to me</div>
+                </div>
+
+                <div class="timeline-item">
+                <div class="timeline-title">Peace</div>
+                <div class="timeline-text">You make me calm and bring my peace</div>
+                </div>
+
+                <div class="timeline-item">
+                <div class="timeline-title">Addiction</div>
+                <div class="timeline-text">You are addictive and I am addicted to you</div>
+                </div>
+
+                
+            </div>
+            </section>
+
+            
+
+            
+
+            <footer class="footer">
+            <div class="footer-inner">
+                <div class="signature">
+                <div class="sig-title">I want to live the rest of my life with you. Be with me and I will there be with you, always. I love you. Happy Birthday once again. Stay well. Stay blessed.<br>
+                    With love,</div>
+                <div class="sig-name" id="yourNameEl">Your Boyfriend</div>
+                </div>
+                <!-- <div class="footer-meta">
+                <div class="meta-item">
+                    <span class="meta-k">Built with</span>
+                    <span class="meta-v mono">love + tech</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-k">Status</span>
+                    <span class="meta-v mono" id="deployStatusEl">deployed</span>
+                </div>
+                </div> -->
+            </div>
+            <!-- <div class="footer-tiny">
+                P.S. Replace the names and images to match your real story. This page is yours to customize.
+            </div> -->
+            </footer>
+        </section>
+        </main>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
