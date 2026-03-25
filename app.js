@@ -18,7 +18,7 @@
     }
 
     // Local-time reveal: 12:00 AM on 26 Mar 2026.
-    const target = new Date(2026, 2, 25, 0, 0, 0, 0); // month: 2 = March
+    const target = new Date(2026, 2, 26, 0, 0, 0, 0); // month: 2 = March
     const countdownView = document.getElementById("countdownView");
     const contentView = document.getElementById("contentView");
     const body = document.body;
